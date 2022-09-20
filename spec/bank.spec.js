@@ -30,10 +30,16 @@ describe("bankApp", () => {
         app.deposit(2000)
         expect(app.balance).toEqual(2500)
     })
-    it("it stores a integer and a time",()=>{
-        const app = new BankApp
+    fit("it stores a integer and a time",()=>{
+        const time = {toDateString: () => "Tue Sep 20 2022"}
+        const app = new BankApp(time)
         app.deposit(1000)
-        app.deposit(2000)
-        expect(app.balance).toEqual(2500)
+        expect(app.balance).toEqual([{deposit: 1000, withdraw: null, balance: 1000, time: "Tue Sep 20 2022"}])
+    })
+    xit("it returns a integer and a time in the correct format",()=>{
+        const time = {toDateString: () => "Tue Sep 20 2022"}
+        const app = new BankApp(time)
+        app.deposit(1000)
+        expect(app.balance).toEqual("|Deposited|Withdrawn|Balance|Date\n|1000|   |£100|Tue Sep 20 2022\n")
     })
 });

@@ -21,7 +21,8 @@ bankAccount.withdraw(150)
 //=> null;
 bankAccount.print()
 //=> 
-//  |Deposited|Withdrawn|statement|Date|
-//  |1000|null|£1000|Tue Sep 20 2022|
-//  |null|150|£850|Tue Sep 20 2022|
+//  |Date|Credit|Debit|Balance|
+//  |21/09/2022|£1000.00|   |£1000.00|
+//  |21/09/2022|   |£150|£1000.00|
+  
 ```

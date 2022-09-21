@@ -26,3 +26,6 @@ bankAccount.print()
 //  |21/09/2022|   |£150|£1000.00|
   
 ```
+
+## classes diagram/planning
+![alt text]

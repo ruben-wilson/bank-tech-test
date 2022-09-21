@@ -28,4 +28,4 @@ bankAccount.print()
 ```
 
 ## classes diagram/planning
-![alt text]
+![alt text](https://github.com/ruben-wilson/bank-tech-test/blob/master/Untitled-2022-09-08-1100.png)
